@@ -1,0 +1,45 @@
+CRITICAL - 2023-09-18 21:58:47 --> Class 'App\Models\PessoaModel' not found
+in APPPATH/Controllers/Pessoa.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Pessoa->exibir()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 22:04:45 --> Class 'App\Models\PessoaModel' not found
+in APPPATH/Controllers/Pessoa.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Pessoa->exibir()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 22:04:47 --> Class 'App\Models\PessoaModel' not found
+in APPPATH/Controllers/Pessoa.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Pessoa->exibir()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-18 22:05:24 --> mysqli_sql_exception: Table 'vquintas.Pessoa' doesn't exist in /home/www/html/vquintas/ADS107/aulas/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/www/html/vquintas/ADS107/aulas/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/www/html/vquintas/ADS107/aulas/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/www/html/vquintas/ADS107/aulas/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/www/html/vquintas/ADS107/aulas/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/www/html/vquintas/ADS107/aulas/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/www/html/vquintas/ADS107/aulas/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /home/www/html/vquintas/ADS107/aulas/app/Controllers/Pessoa.php(16): CodeIgniter\BaseModel->findAll()
+#7 /home/www/html/vquintas/ADS107/aulas/system/CodeIgniter.php(932): App\Controllers\Pessoa->exibir()
+#8 /home/www/html/vquintas/ADS107/aulas/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/www/html/vquintas/ADS107/aulas/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/www/html/vquintas/ADS107/aulas/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-09-18 22:05:24 --> Table 'vquintas.Pessoa' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Controllers/Pessoa.php(16): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Pessoa->exibir()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
